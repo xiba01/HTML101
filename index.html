@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 101</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            margin 20
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: white;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        div {
+            margin: 20px;
+        }
+        #note {
+            background-color: #fff1b0;
+            padding: 10px;
+            margin: 0;
+            border-radius: 15px;
+            margin-right: 60%;
+        }
+        #example {
+            background-color: #0f243b;;
+            padding: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: 'Courier New', monospace;
+            color: rgb(255, 253, 253);
+            border-radius: 15px;
+            margin-right: 80%;
+        }
+        button {
+            background-color: hsl(273, 47%, 25%);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Images/Logo-HTML101.png" alt="Logo not found" width="140px">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h2>Introduction</h2>
+        <p>HTML (HyperText Markup Language) is the foundation of web development, providing a set of markup tags and elements that structure and format content for display on browsers, enabling the creation of interactive and visually appealing web pages.</p>
+
+
+        <h2>Lesson overview</h2>
+        <p>This section contains a general overview of topics that you will learn in this lesson.</p>
+        <ul>
+            <a href="#first"><li>HTML Tags and Elements</li></a>
+            <a href="#second"><li>HTML Basics</li></a>
+        </ul>
+    </div>
+
+    <main>
+        <div>
+            <a name="first"></a>
+            <h2>Elements and tags</h2>
+            <p>Opening tags in HTML indicate the beginning of an element and consist of a keyword enclosed in angle brackets (e.g., &lt;p&gt; for a paragraph). Conversely, closing tags signal the end of an element and are similar to opening tags, but with a forward slash before the keyword (e.g., &lt;/p&gt; for closing a paragraph).</p>
+            <h2>Example:</h2>
+            <div id="example">
+                <p>&lt;p&gt;some text context &lt;/p&gt;</p>
+            </div>
+            <table>
+                <tr>
+                    <td>Start tag</td>
+                    <td>Element content</td>
+                    <td>End tag</td>
+
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt</td>
+                    <td>First header</td>
+                    <td>&lt;/h1&gt</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt</td>
+                    <td>Paragraph</td>
+                    <td>&lt;/p&gt</td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt</td>
+                    <td>none</td>
+                    <td>none</td>
+                </tr>
+                </table>
+                    <div id="note">
+                        <p>NOTE</p>
+                        <p>Some HTML elements have no content (like the &lt;br&gt; element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+                    </div>
+                <h3>The difference bewtween tags and elements:</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WJZEmOJLIII?si=1t6xaHiKUZNKoJ1K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+
+        <div>
+            <a name="second"></a>
+            <h2>HTML Basics</h2>
+            <p>All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;.
+                <br>
+            The HTML document itself begins with &lt;html&gt; and ends with &lt;/html&gt;.
+                <br>
+            The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.</p>
+            <h2>Example:</h2>
+            <div id="example">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;body&gt;<br>
+                <br>
+                &lt;h1&gt;My First Heading&lt;/h1&gt;<br>
+                &lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+                <br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </div>
+            <a href="https://www.w3schools.com/html/html_editor.asp" target="_blank">
+                <button>Try it Yourself!</button>
+            </a>
+        </div>
+
+        
+    </main>
+</body>
+</html>
